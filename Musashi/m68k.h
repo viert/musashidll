@@ -213,7 +213,7 @@ void m68k_write_memory_32_pd(unsigned int address, unsigned int value);
  * services the interrupt.
  * Default behavior: return M68K_INT_ACK_AUTOVECTOR.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_int_ack_callback(int  (*callback)(int int_level));
+EXTERN_C DLLEXPORT void m68k_set_int_ack_callback(int  (*callback)(int int_level));
 
 
 /* Set the callback for a breakpoint acknowledge (68010+).
@@ -222,7 +222,7 @@ EXTERN_C _declspec(dllexport) void m68k_set_int_ack_callback(int  (*callback)(in
  * BKPT instruction for 68020+, or 0 for 68010.
  * Default behavior: do nothing.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_bkpt_ack_callback(void (*callback)(unsigned int data));
+EXTERN_C DLLEXPORT void m68k_set_bkpt_ack_callback(void (*callback)(unsigned int data));
 
 
 /* Set the callback for the RESET instruction.
@@ -230,7 +230,7 @@ EXTERN_C _declspec(dllexport) void m68k_set_bkpt_ack_callback(void (*callback)(u
  * The CPU calls this callback every time it encounters a RESET instruction.
  * Default behavior: do nothing.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_reset_instr_callback(void  (*callback)(void));
+EXTERN_C DLLEXPORT void m68k_set_reset_instr_callback(void  (*callback)(void));
 
 
 /* Set the callback for informing of a large PC change.
@@ -239,7 +239,7 @@ EXTERN_C _declspec(dllexport) void m68k_set_reset_instr_callback(void  (*callbac
  * by a large value (currently set for changes by longwords).
  * Default behavior: do nothing.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_pc_changed_callback(void  (*callback)(unsigned int new_pc));
+EXTERN_C DLLEXPORT void m68k_set_pc_changed_callback(void  (*callback)(unsigned int new_pc));
 
 
 /* Set the callback for CPU function code changes.
@@ -249,7 +249,7 @@ EXTERN_C _declspec(dllexport) void m68k_set_pc_changed_callback(void  (*callback
  * access it is (supervisor/user, program/data and such).
  * Default behavior: do nothing.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_fc_callback(void  (*callback)(unsigned int new_fc));
+EXTERN_C DLLEXPORT void m68k_set_fc_callback(void  (*callback)(unsigned int new_fc));
 
 
 /* Set a callback for the instruction cycle of the CPU.
@@ -258,7 +258,7 @@ EXTERN_C _declspec(dllexport) void m68k_set_fc_callback(void  (*callback)(unsign
  * instruction cycle.
  * Default behavior: do nothing.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_instr_hook_callback(void  (*callback)(void));
+EXTERN_C DLLEXPORT void m68k_set_instr_hook_callback(void  (*callback)(void));
 
 
 
@@ -270,12 +270,12 @@ EXTERN_C _declspec(dllexport) void m68k_set_instr_hook_callback(void  (*callback
  * Currently supported types are: M68K_CPU_TYPE_68000, M68K_CPU_TYPE_68010,
  * M68K_CPU_TYPE_EC020, and M68K_CPU_TYPE_68020.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_cpu_type(unsigned int cpu_type);
+EXTERN_C DLLEXPORT void m68k_set_cpu_type(unsigned int cpu_type);
 
 /* Do whatever initialisations the core requires.  Should be called
  * at least once at init time.
  */
-EXTERN_C _declspec(dllexport) void m68k_init(void);
+EXTERN_C DLLEXPORT void m68k_init(void);
 
 /* Pulse the RESET pin on the CPU.
  * You *MUST* reset the CPU at least once to initialize the emulation
@@ -283,63 +283,63 @@ EXTERN_C _declspec(dllexport) void m68k_init(void);
  *       the CPU for the first time, the CPU will be set to
  *       M68K_CPU_TYPE_68000.
  */
-EXTERN_C _declspec(dllexport) void m68k_pulse_reset(void);
+EXTERN_C DLLEXPORT void m68k_pulse_reset(void);
 
 /* execute num_cycles worth of instructions.  returns number of cycles used */
-EXTERN_C _declspec(dllexport) int m68k_execute(int num_cycles);
+EXTERN_C DLLEXPORT int m68k_execute(int num_cycles);
 
 /* These functions let you read/write/modify the number of cycles left to run
  * while m68k_execute() is running.
  * These are useful if the 68k accesses a memory-mapped port on another device
  * that requires immediate processing by another CPU.
  */
-EXTERN_C _declspec(dllexport) int m68k_cycles_run(void);              /* Number of cycles run so far */
-EXTERN_C _declspec(dllexport) int m68k_cycles_remaining(void);        /* Number of cycles left */
-EXTERN_C _declspec(dllexport) void m68k_modify_timeslice(int cycles); /* Modify cycles left */
-EXTERN_C _declspec(dllexport) void m68k_end_timeslice(void);          /* End timeslice now */
+EXTERN_C DLLEXPORT int m68k_cycles_run(void);              /* Number of cycles run so far */
+EXTERN_C DLLEXPORT int m68k_cycles_remaining(void);        /* Number of cycles left */
+EXTERN_C DLLEXPORT void m68k_modify_timeslice(int cycles); /* Modify cycles left */
+EXTERN_C DLLEXPORT void m68k_end_timeslice(void);          /* End timeslice now */
 
 /* Set the IPL0-IPL2 pins on the CPU (IRQ).
  * A transition from < 7 to 7 will cause a non-maskable interrupt (NMI).
  * Setting IRQ to 0 will clear an interrupt request.
  */
-EXTERN_C _declspec(dllexport) void m68k_set_irq(unsigned int int_level);
+EXTERN_C DLLEXPORT void m68k_set_irq(unsigned int int_level);
 
 
 /* Halt the CPU as if you pulsed the HALT pin. */
-EXTERN_C _declspec(dllexport) void m68k_pulse_halt(void);
+EXTERN_C DLLEXPORT void m68k_pulse_halt(void);
 
 
 /* Context switching to allow multiple CPUs */
 
 /* Get the size of the cpu context in bytes */
-EXTERN_C _declspec(dllexport) unsigned int m68k_context_size(void);
+EXTERN_C DLLEXPORT unsigned int m68k_context_size(void);
 
 /* Get a cpu context */
-EXTERN_C _declspec(dllexport) unsigned int m68k_get_context(void* dst);
+EXTERN_C DLLEXPORT unsigned int m68k_get_context(void* dst);
 
 /* set the current cpu context */
-EXTERN_C _declspec(dllexport) void m68k_set_context(void* dst);
+EXTERN_C DLLEXPORT void m68k_set_context(void* dst);
 
 /* Register the CPU state information */
-EXTERN_C _declspec(dllexport) void m68k_state_register(const char *type);
+EXTERN_C DLLEXPORT void m68k_state_register(const char *type);
 
 
 /* Peek at the internals of a CPU context.  This can either be a context
  * retrieved using m68k_get_context() or the currently running context.
  * If context is NULL, the currently running CPU context will be used.
  */
-EXTERN_C _declspec(dllexport) unsigned int m68k_get_reg(void* context, m68k_register_t reg);
+EXTERN_C DLLEXPORT unsigned int m68k_get_reg(void* context, m68k_register_t reg);
 
 /* Poke values into the internals of the currently running CPU context */
-EXTERN_C _declspec(dllexport) void m68k_set_reg(m68k_register_t reg, unsigned int value);
+EXTERN_C DLLEXPORT void m68k_set_reg(m68k_register_t reg, unsigned int value);
 
 /* Check if an instruction is valid for the specified CPU type */
-EXTERN_C _declspec(dllexport) unsigned int m68k_is_valid_instruction(unsigned int instruction, unsigned int cpu_type);
+EXTERN_C DLLEXPORT unsigned int m68k_is_valid_instruction(unsigned int instruction, unsigned int cpu_type);
 
 /* Disassemble 1 instruction using the epecified CPU type at pc.  Stores
  * disassembly in str_buff and returns the size of the instruction in bytes.
  */
-EXTERN_C _declspec(dllexport) unsigned int m68k_disassemble(char* str_buff, unsigned int pc, unsigned int cpu_type);
+EXTERN_C DLLEXPORT unsigned int m68k_disassemble(char* str_buff, unsigned int pc, unsigned int cpu_type);
 
 /* ======================================================================== */
 /* ============================== END OF FILE ============================= */

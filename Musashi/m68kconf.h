@@ -177,6 +177,22 @@
 #define INLINE static __inline
 #endif /* INLINE */
 
+#ifndef EXTERN_C
+#if __cplusplus
+#define EXTERN_C extern "C"
+#else
+#define EXTERN_C extern
+#endif /* __cplusplus */
+#endif /* !EXTERN_C */
+
+#ifndef DLLEXPORT
+#ifdef WIN32_MEAN_AND_LEAN
+#define DLLEXPORT _declspec(dllexport)
+#else
+#define DLLEXPORT
+#endif /* WIN32_MEAN_AND_LEAN */
+#endif /* !DLLEXPORT */
+
 #endif /* M68K_COMPILE_FOR_MAME == OPT_OFF */
 
 /* ======================================================================== */
