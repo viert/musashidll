@@ -164,7 +164,7 @@
     <ClCompile Include="m68kopdm.c" />
     <ClCompile Include="m68kopnz.c" />
     <ClCompile Include="m68kops.c" />
-    <ClCompile Include="Musashi.cpp" />
+    <ClCompile Include="Musashi.c" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

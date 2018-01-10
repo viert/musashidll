@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E18870D200602E40039BA90 /* m68kconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1886FF200602E30039BA90 /* m68kconf.h */; };
+		9E18870E200602E40039BA90 /* Musashi.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E188700200602E40039BA90 /* Musashi.c */; };
+		9E18870F200602E40039BA90 /* m68kcpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E188701200602E40039BA90 /* m68kcpu.c */; };
+		9E188710200602E40039BA90 /* m68k.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E188702200602E40039BA90 /* m68k.h */; };
+		9E188711200602E40039BA90 /* m68kopdm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E188703200602E40039BA90 /* m68kopdm.c */; };
+		9E188712200602E40039BA90 /* m68kops.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E188704200602E40039BA90 /* m68kops.h */; };
+		9E188713200602E40039BA90 /* m68kopnz.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E188705200602E40039BA90 /* m68kopnz.c */; };
+		9E188714200602E40039BA90 /* m68kopac.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E188706200602E40039BA90 /* m68kopac.c */; };
+		9E188715200602E40039BA90 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E188707200602E40039BA90 /* stdafx.cpp */; };
+		9E188716200602E40039BA90 /* m68kcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E188708200602E40039BA90 /* m68kcpu.h */; };
+		9E188717200602E40039BA90 /* m68kdasm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E188709200602E40039BA90 /* m68kdasm.c */; };
+		9E188718200602E40039BA90 /* stdafx.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E18870A200602E40039BA90 /* stdafx.h */; };
+		9E188719200602E40039BA90 /* targetver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E18870B200602E40039BA90 /* targetver.h */; };
+		9E18871A200602E40039BA90 /* m68kops.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E18870C200602E40039BA90 /* m68kops.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E1886F8200602A30039BA90 /* libMusashi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMusashi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1886FF200602E30039BA90 /* m68kconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = m68kconf.h; path = ../../Musashi/m68kconf.h; sourceTree = "<group>"; };
+		9E188700200602E40039BA90 /* Musashi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Musashi.c; path = ../../Musashi/Musashi.c; sourceTree = "<group>"; };
+		9E188701200602E40039BA90 /* m68kcpu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m68kcpu.c; path = ../../Musashi/m68kcpu.c; sourceTree = "<group>"; };
+		9E188702200602E40039BA90 /* m68k.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = m68k.h; path = ../../Musashi/m68k.h; sourceTree = "<group>"; };
+		9E188703200602E40039BA90 /* m68kopdm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m68kopdm.c; path = ../../Musashi/m68kopdm.c; sourceTree = "<group>"; };
+		9E188704200602E40039BA90 /* m68kops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = m68kops.h; path = ../../Musashi/m68kops.h; sourceTree = "<group>"; };
+		9E188705200602E40039BA90 /* m68kopnz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m68kopnz.c; path = ../../Musashi/m68kopnz.c; sourceTree = "<group>"; };
+		9E188706200602E40039BA90 /* m68kopac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m68kopac.c; path = ../../Musashi/m68kopac.c; sourceTree = "<group>"; };
+		9E188707200602E40039BA90 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = ../../Musashi/stdafx.cpp; sourceTree = "<group>"; };
+		9E188708200602E40039BA90 /* m68kcpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = m68kcpu.h; path = ../../Musashi/m68kcpu.h; sourceTree = "<group>"; };
+		9E188709200602E40039BA90 /* m68kdasm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m68kdasm.c; path = ../../Musashi/m68kdasm.c; sourceTree = "<group>"; };
+		9E18870A200602E40039BA90 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../../Musashi/stdafx.h; sourceTree = "<group>"; };
+		9E18870B200602E40039BA90 /* targetver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = targetver.h; path = ../../Musashi/targetver.h; sourceTree = "<group>"; };
+		9E18870C200602E40039BA90 /* m68kops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m68kops.c; path = ../../Musashi/m68kops.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E1886F5200602A30039BA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E1886EF200602A30039BA90 = {
+			isa = PBXGroup;
+			children = (
+				9E188702200602E40039BA90 /* m68k.h */,
+				9E1886FF200602E30039BA90 /* m68kconf.h */,
+				9E188701200602E40039BA90 /* m68kcpu.c */,
+				9E188708200602E40039BA90 /* m68kcpu.h */,
+				9E188709200602E40039BA90 /* m68kdasm.c */,
+				9E188706200602E40039BA90 /* m68kopac.c */,
+				9E188703200602E40039BA90 /* m68kopdm.c */,
+				9E188705200602E40039BA90 /* m68kopnz.c */,
+				9E18870C200602E40039BA90 /* m68kops.c */,
+				9E188704200602E40039BA90 /* m68kops.h */,
+				9E188700200602E40039BA90 /* Musashi.c */,
+				9E188707200602E40039BA90 /* stdafx.cpp */,
+				9E18870A200602E40039BA90 /* stdafx.h */,
+				9E18870B200602E40039BA90 /* targetver.h */,
+				9E1886F9200602A30039BA90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E1886F9200602A30039BA90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E1886F8200602A30039BA90 /* libMusashi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9E1886F6200602A30039BA90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E188710200602E40039BA90 /* m68k.h in Headers */,
+				9E188716200602E40039BA90 /* m68kcpu.h in Headers */,
+				9E188718200602E40039BA90 /* stdafx.h in Headers */,
+				9E188712200602E40039BA90 /* m68kops.h in Headers */,
+				9E18870D200602E40039BA90 /* m68kconf.h in Headers */,
+				9E188719200602E40039BA90 /* targetver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9E1886F7200602A30039BA90 /* Musashi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E1886FC200602A30039BA90 /* Build configuration list for PBXNativeTarget "Musashi" */;
+			buildPhases = (
+				9E1886F4200602A30039BA90 /* Sources */,
+				9E1886F5200602A30039BA90 /* Frameworks */,
+				9E1886F6200602A30039BA90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Musashi;
+			productName = Musashi;
+			productReference = 9E1886F8200602A30039BA90 /* libMusashi.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E1886F0200602A30039BA90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = viert;
+				TargetAttributes = {
+					9E1886F7200602A30039BA90 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9E1886F3200602A30039BA90 /* Build configuration list for PBXProject "Musashi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E1886EF200602A30039BA90;
+			productRefGroup = 9E1886F9200602A30039BA90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E1886F7200602A30039BA90 /* Musashi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E1886F4200602A30039BA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E188713200602E40039BA90 /* m68kopnz.c in Sources */,
+				9E18870F200602E40039BA90 /* m68kcpu.c in Sources */,
+				9E18871A200602E40039BA90 /* m68kops.c in Sources */,
+				9E188711200602E40039BA90 /* m68kopdm.c in Sources */,
+				9E188717200602E40039BA90 /* m68kdasm.c in Sources */,
+				9E188715200602E40039BA90 /* stdafx.cpp in Sources */,
+				9E188714200602E40039BA90 /* m68kopac.c in Sources */,
+				9E18870E200602E40039BA90 /* Musashi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E1886FA200602A30039BA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9E1886FB200602A30039BA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9E1886FD200602A30039BA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E1886FE200602A30039BA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E1886F3200602A30039BA90 /* Build configuration list for PBXProject "Musashi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1886FA200602A30039BA90 /* Debug */,
+				9E1886FB200602A30039BA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E1886FC200602A30039BA90 /* Build configuration list for PBXNativeTarget "Musashi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1886FD200602A30039BA90 /* Debug */,
+				9E1886FE200602A30039BA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E1886F0200602A30039BA90 /* Project object */;
+}

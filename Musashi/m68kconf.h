@@ -166,7 +166,7 @@
  * operations.
 */
 #define M68K_USE_64_BIT  OPT_OFF
-
+#define WIN32_LEAN_AND_MEAN
 
 /* Set to your compiler's static inline keyword to enable it, or
  * set it to blank to disable it.
@@ -176,6 +176,22 @@
 #ifndef INLINE
 #define INLINE static __inline
 #endif /* INLINE */
+
+#ifndef EXTERN_C
+#if __cplusplus
+#define EXTERN_C extern "C"
+#else
+#define EXTERN_C extern
+#endif /* __cplusplus */
+#endif /* !EXTERN_C */
+
+#ifndef DLLEXPORT
+#ifdef _WIN32
+#define DLLEXPORT _declspec(dllexport)
+#else
+#define DLLEXPORT
+#endif /* _WIN32 */
+#endif /* !DLLEXPORT */
 
 #endif /* M68K_COMPILE_FOR_MAME == OPT_OFF */
 
