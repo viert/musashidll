@@ -5,11 +5,11 @@
 
 #pragma once
 
-#ifdef WIN32_MEAN_AND_LEAN
+#ifdef _WIN32
 #define _CRT_SECURE_NO_WARNINGS
 #include "targetver.h"
 #include <windows.h>
-#endif // WIN32_MEAN_AND_LEAN
+#endif // _WIN32
 
 // Файлы заголовков Windows:
 #include <stdlib.h>
